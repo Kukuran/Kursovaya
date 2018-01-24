@@ -39,6 +39,7 @@
             this.SpeedTB = new System.Windows.Forms.TextBox();
             this.AngleTb = new System.Windows.Forms.TextBox();
             this.AngSpeedTb = new System.Windows.Forms.TextBox();
+            this.BtnSaveResult = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // BtnStart
@@ -139,11 +140,22 @@
             this.AngSpeedTb.Size = new System.Drawing.Size(121, 263);
             this.AngSpeedTb.TabIndex = 16;
             // 
+            // BtnSaveResult
+            // 
+            this.BtnSaveResult.Location = new System.Drawing.Point(12, 349);
+            this.BtnSaveResult.Name = "BtnSaveResult";
+            this.BtnSaveResult.Size = new System.Drawing.Size(375, 36);
+            this.BtnSaveResult.TabIndex = 17;
+            this.BtnSaveResult.Text = "Сохранить результаты в файл";
+            this.BtnSaveResult.UseVisualStyleBackColor = true;
+            this.BtnSaveResult.Click += new System.EventHandler(this.BtnSaveResult_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(396, 359);
+            this.ClientSize = new System.Drawing.Size(396, 397);
+            this.Controls.Add(this.BtnSaveResult);
             this.Controls.Add(this.AngSpeedTb);
             this.Controls.Add(this.AngleTb);
             this.Controls.Add(this.SpeedTB);
@@ -173,6 +185,7 @@
         private System.Windows.Forms.TextBox SpeedTB;
         private System.Windows.Forms.TextBox AngleTb;
         private System.Windows.Forms.TextBox AngSpeedTb;
+        private System.Windows.Forms.Button BtnSaveResult;
     }
 }
 
