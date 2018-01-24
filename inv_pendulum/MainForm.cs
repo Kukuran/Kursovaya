@@ -67,6 +67,19 @@ namespace Equalizer
             }
         }
 
+        private void BtnReadData_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                InputOutput.InputData(out speed, out angle, "f1t.txt");
+                MessageBox.Show("Успешно загружено из файла", "Загрузка", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch
+            {
+                MessageBox.Show("Упс. Что-то пошло не так!", "Загрузка", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
         private void BtnStart_Click(object sender, EventArgs e)
         {            
             AngleForm.Show();

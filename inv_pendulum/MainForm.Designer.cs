@@ -40,6 +40,7 @@
             this.AngleTb = new System.Windows.Forms.TextBox();
             this.AngSpeedTb = new System.Windows.Forms.TextBox();
             this.BtnSaveResult = new System.Windows.Forms.Button();
+            this.BtnReadData = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // BtnStart
@@ -150,11 +151,22 @@
             this.BtnSaveResult.UseVisualStyleBackColor = true;
             this.BtnSaveResult.Click += new System.EventHandler(this.BtnSaveResult_Click);
             // 
+            // BtnReadData
+            // 
+            this.BtnReadData.Location = new System.Drawing.Point(12, 391);
+            this.BtnReadData.Name = "BtnReadData";
+            this.BtnReadData.Size = new System.Drawing.Size(375, 36);
+            this.BtnReadData.TabIndex = 18;
+            this.BtnReadData.Text = "Считать скорось и угол из файла";
+            this.BtnReadData.UseVisualStyleBackColor = true;
+            this.BtnReadData.Click += new System.EventHandler(this.BtnReadData_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(396, 397);
+            this.ClientSize = new System.Drawing.Size(396, 434);
+            this.Controls.Add(this.BtnReadData);
             this.Controls.Add(this.BtnSaveResult);
             this.Controls.Add(this.AngSpeedTb);
             this.Controls.Add(this.AngleTb);
@@ -186,6 +198,7 @@
         private System.Windows.Forms.TextBox AngleTb;
         private System.Windows.Forms.TextBox AngSpeedTb;
         private System.Windows.Forms.Button BtnSaveResult;
+        private System.Windows.Forms.Button BtnReadData;
     }
 }
 
