@@ -13,18 +13,18 @@ namespace UnitTests
         public void ResultToFile_Text123()
         {
             string etalon =
-                "Скорость" + "\n" +
-                "------------------------" + "\n" +
-                "123" + "\n" +
-                "------------------------" + "\n" +
-                "Угол" + "\n" +
-                "------------------------" + "\n" +
-                "1234" + "\n" +
-                "------------------------" + "\n" +
-                "Угловая Скорость" + "\n" +
-                "------------------------" + "\n" +
-                "12345" + "\n" +
-                "------------------------" + "\n";
+                "Скорость" + "\r\n" +
+                "------------------------" + "\r\n" +
+                "123" + 
+                "------------------------" + "\r\n" +
+                "Угол" + "\r\n" +
+                "------------------------" + "\r\n" +
+                "1234" + 
+                "------------------------" + "\r\n" +
+                "Угловая Скорость" + "\r\n" +
+                "------------------------" + "\r\n" +
+                "12345" + 
+                "------------------------" + "\r\n";
             TextBox SpeedTB = new TextBox();
             TextBox AngleTb = new TextBox();
             TextBox AngSpeedTb = new TextBox();
@@ -39,6 +39,7 @@ namespace UnitTests
             }
             Assert.That(test, Is.EqualTo(etalon));
         }
+        [Test]
         public void InputData_Speed100_Angle200()
         {
             double e_speed = 100;
@@ -48,5 +49,6 @@ namespace UnitTests
             Assert.That(e_speed, Is.EqualTo(speed));
             Assert.That(e_angle, Is.EqualTo(angle));
         }
+
     }
 }
