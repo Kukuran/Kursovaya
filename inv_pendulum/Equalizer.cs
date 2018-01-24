@@ -107,7 +107,7 @@ namespace Equalizer
                     break;
             }
         }
-        int DeterminateDTA(double angle)
+        public int DeterminateDTA(double angle)
         {
             int result = 0;
             /*  
@@ -158,7 +158,7 @@ namespace Equalizer
             }
             return result;
         }
-        int DeterminateDTS(double speed)
+        public int DeterminateDTS(double speed)
         {
             int type = 0;
             // 0 - нулевая; 

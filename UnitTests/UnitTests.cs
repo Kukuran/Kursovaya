@@ -49,6 +49,24 @@ namespace UnitTests
             Assert.That(e_speed, Is.EqualTo(speed));
             Assert.That(e_angle, Is.EqualTo(angle));
         }
-
+        [Test]
+        public void DeterminateDTA_Angle270()
+        {
+            Assert.That(new Equalizer.Equalizer().DeterminateDTA(270), Is.EqualTo(-3));
+        }
+        [Test]
+        public void DeterminateDTS_Speed0()
+        {
+            Assert.That(new Equalizer.Equalizer().DeterminateDTS(0), Is.EqualTo(0));
+        }
+        [Test]
+        public void Equalizer_Angle270_Speed0()
+        {
+            Equalizer.Equalizer equalizer = new Equalizer.Equalizer();
+            double angle = 270, speed = 0;
+            equalizer.CalckChange(ref angle, ref speed);
+            Assert.That(angle, Is.EqualTo(300));
+            Assert.That(speed, Is.EqualTo(30));
+        }
     }
 }
