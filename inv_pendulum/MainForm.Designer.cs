@@ -54,7 +54,7 @@
             // 
             // TimerRefresh
             // 
-            this.TimerRefresh.Interval = 500;
+            this.TimerRefresh.Interval = 80;
             this.TimerRefresh.Tick += new System.EventHandler(this.TimerRefresh_Tick);
             // 
             // LbSpeed
