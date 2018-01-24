@@ -1,5 +1,6 @@
 ﻿using System;
-using NUnit.Framework; 
+using NUnit.Framework;
+using System.Windows.Forms;
 
 namespace UnitTests
 {
@@ -9,7 +10,7 @@ namespace UnitTests
         [Test]
         public void TestMethod()
         {
-            Assert.That(2, Is.EqualTo(2));
+            
         }
     }
 }
