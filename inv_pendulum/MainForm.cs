@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace Equalizer
 {
@@ -52,6 +53,20 @@ namespace Equalizer
         {
             InitializeComponent();
         }
+
+        private void BtnSaveResult_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                InputOutput.ResultToFile(AngleTb, SpeedTB, AngSpeedTb, "TestResult.txt");
+                MessageBox.Show("Успешно сохранено в файл", "Сохранение", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch
+            {
+                MessageBox.Show("Упс. Что-то пошло не так!", "Сохранение", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
         private void BtnStart_Click(object sender, EventArgs e)
         {            
             AngleForm.Show();
