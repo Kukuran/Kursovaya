@@ -61,7 +61,7 @@ namespace Equalizer
             SpeedTB.Text += string.Format("{0} \n", speed) + Environment.NewLine;
             AngSpeedTb.Text += string.Format("{0} \n", speed) + Environment.NewLine;
             AngleForm.MakeGr(tick, angle);
-            SpeedForm.MakeGr(tick, angle);
+            SpeedForm.MakeGr(tick, speed);
         }
 
         private void TimerRefresh_Tick(object sender, EventArgs e)
@@ -82,7 +82,7 @@ namespace Equalizer
                 AngSpeedTb.Text += string.Format("{0} \n", speed) + Environment.NewLine;
                 tick++;
                 AngleForm.MakeGr(tick, angle);
-                SpeedForm.MakeGr(tick, angle);
+                SpeedForm.MakeGr(tick, speed);
             }
             else
             {
